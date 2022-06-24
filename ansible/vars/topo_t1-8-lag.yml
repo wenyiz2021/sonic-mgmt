@@ -7,7 +7,7 @@ topology:
       vm_offset: 0
     ARISTA01T0:
       vlans:
-        - 4
+        - 2
       vm_offset: 1
 
 configuration_properties:
