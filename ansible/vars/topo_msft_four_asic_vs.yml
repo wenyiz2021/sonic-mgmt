@@ -101,6 +101,8 @@ slot0:
               - 10.1.0.0
               - 2603:10e2:400:1::1
           interfaces:
+            Eth4-ASIC0:
+              lacp: 1
             Port-Channel1:
               ipv4: 10.1.0.1/31
               ipv6: 2603:10e2:400:1::2/126
@@ -112,6 +114,8 @@ slot0:
               - 10.1.0.4
               - 2603:10e2:400:1::9
           interfaces:
+            Eth4-ASIC1:
+              lacp: 2
             Port-Channel2:
               ipv4: 10.1.0.5/31
               ipv6: 2603:10e2:400:1::a/126
