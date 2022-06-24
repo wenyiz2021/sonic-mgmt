@@ -127,7 +127,7 @@ slot0:
               - Eth0-ASIC3
           ASIC1:
             asic_intfs:
-              - Eth2-ASIC3
+              - Eth1-ASIC3
       configuration_properties:
         common:
           dut_asn: 65100
@@ -141,7 +141,7 @@ slot0:
               - 10.1.0.2
               - 2603:10e2:400:1::5
           interfaces:
-            Eth6-ASIC0:
+            Eth3-ASIC0:
               lacp: 1
             Port-Channel1:
               ipv4: 10.1.0.3/31
@@ -154,7 +154,7 @@ slot0:
               - 10.1.0.6
               - 2603:10e2:400:1::d
           interfaces:
-            Eth6-ASIC1:
+            Eth3-ASIC1:
               lacp: 2
             Port-Channel2:
               ipv4: 10.1.0.7/31
