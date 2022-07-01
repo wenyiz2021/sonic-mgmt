@@ -250,7 +250,7 @@ test_t1_lag() {
 
 test_multi_asic_t1_lag() {
     tgname=multi_asic_t1_lag
-    tests=""
+    tests="bgp/test_bgp_fact.py"
 
     pushd $SONIC_MGMT_DIR/tests
     # TODO: Remove disable of loganaler and sanity check once multi-asic testbed is stable.
