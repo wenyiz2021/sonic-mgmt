@@ -111,8 +111,8 @@
   topo: t1-8-lag
   ptf_image_name: docker-ptf
   ptf: ptf-05
-  ptf_ip: 10.250.0.113/24
-  ptf_ipv6: fec0::ffff:afa:d/64
+  ptf_ip: 10.250.0.110/24
+  ptf_ipv6: fec0::ffff:afa:a/64
   server: server_1
   vm_base: VM0128
   dut:
