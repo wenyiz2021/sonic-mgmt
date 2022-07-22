@@ -91,6 +91,19 @@ RUNTEST_CLI_COMMON_OPTS="\
 -r \
 -e --allow_recover"
 
+TEST_OPTS="\
+-i $inventory \
+-d $dut \
+-n $tbname \
+-f $testbed_file \
+-k debug \
+-l warning \
+-m individual \
+-a False \
+-O \
+-r \
+-e --allow_recover"
+
 if [ -n "$exit_on_error" ]; then
     RUNTEST_CLI_COMMON_OPTS="$RUNTEST_CLI_COMMON_OPTS -E"
 fi
@@ -264,7 +277,7 @@ test_multi_asic_t1_lag() {
 
     pushd $SONIC_MGMT_DIR/tests
     # TODO: Remove disable of loganaler and sanity check once multi-asic testbed is stable.
-    ./run_tests.sh $RUNTEST_CLI_COMMON_OPTS -c "$tests" -p logs/$tgname -e "--disable_loganalyzer --skip_sanity" -u
+    ./run_tests.sh $TEST_OPTS -c "$tests" -p logs/$tgname -e "--disable_loganalyzer" -u
     popd
 }
 
